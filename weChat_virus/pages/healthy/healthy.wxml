@@ -1,0 +1,78 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="weui-form">
+        <view class="weui-form__control-area">
+            <view class="weui-cells__group weui-cells__group_form">
+                <view class="weui-cells__title">疫情信息申报查询</view>
+                <view class="weui-cells weui-cells_form">
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">姓名</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input class="weui-input"  placeholder-class="weui-input__placeholder" bindinput="getusernameInput" value="{{username}}" disabled/>
+                        </view>
+                    </view>
+
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">年龄</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input class="weui-input"  type="number" placeholder-class="weui-input__placeholder" bindinput="getageInput" value="{{age}}" disabled type="number"/>
+                        </view>
+                    </view>
+
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">所在地</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input class="weui-input"  placeholder-class="weui-input__placeholder" bindinput="getadressInput"  value="{{adress}}" disabled/>
+                        </view>
+                    </view>
+
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">健康状况</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                                <input class="weui-input"  placeholder-class="weui-input__placeholder" bindinput="gethealthyInput" value="{{healthy}}" disabled/>
+                        </view>
+                    </view>
+
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">申报时间</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <view class="weui-cell__bd">
+                                <input class="weui-input"  placeholder-class="weui-input__placeholder" value="{{submit_time}}" disabled/>
+                            </view>
+                        </view>
+                    </view>
+
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">健康码</label>
+                        </view>
+                        <view class="weui-cell__bd" bindtap="doUpload">
+                            <view class="uploader-container" wx:if="{{imgUrl}}">
+                                <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-form__tips-area">
+            <view class="weui-form__tips">
+                疫情期间，注意防护
+            </view>
+        </view>
+        <view class="weui-form__extra-area">
+            <view class="weui-footer">
+                <view class="weui-footer__text">Copyright © laughing制作</view>
+            </view>
+        </view>
+    </view>
+</view>

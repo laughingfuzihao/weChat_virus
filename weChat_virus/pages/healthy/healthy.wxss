@@ -1,0 +1,6 @@
+.uploader-text, .tunnel-text {
+  width: 100%;
+  line-height: 28px;
+  font-size: 34rpx;
+  color: #007aff;
+}
